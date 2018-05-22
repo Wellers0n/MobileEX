@@ -9,25 +9,25 @@
     >
 
     <TextView
-        android:id="@+id/tv_usuario_label"
+        android:id="@+id/tv_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tw_name"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:maxLength="15"
 
         />
 
     <EditText
         android:id="@+id/et_usuario"
-        android:layout_below="@id/tv_usuario_label"
+        android:layout_below="@id/tv_usuario"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:nextFocusDown="@id/et_senha"
-        />
+        android:inputType="textImeMultiLine"/>
 
     <TextView
         android:id="@+id/tv_senha"
@@ -35,9 +35,9 @@
         android:layout_height="wrap_content"
         android:text="@string/tw_senha"
         android:textSize="30sp"
-        android:layout_below="@id/tv_usuario_label"
+        android:layout_below="@id/et_usuario"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
 
         />
 
@@ -47,16 +47,41 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_senha"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:inputType="textPassword"
-        />
+        android:maxLength="15" />
 
-    <Button
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_unidade_usuario"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_senha"
+        android:layout_marginTop="20dp"
+        android:text="@string/unidade_de_usuario"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/et_unidade_usuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unidade_usuario"
+        android:layout_marginTop="10dp"
+        android:maxLength="15"
+        android:layout_centerHorizontal="true"
+        android:inputType="textImeMultiLine"/>
+
+
+    <Button
+        android:id="@+id/b_botao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_unidade_usuario"
         android:layout_marginTop="50dp"
         android:text="@string/btn_acessar"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:background="@drawable/radius_button"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"/>
 
 </RelativeLayout>

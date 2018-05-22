@@ -3,4 +3,5 @@
     <string name="tw_name">Nome:</string>
     <string name="tw_senha">Senha:</string>
     <string name="btn_acessar">Acessar</string>
+    <string name="unidade_de_usuario">Unidade de usuario:</string>
 </resources>
