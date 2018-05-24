@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">CrosSystem</string>
-    <string name="tw_name">Nome</string>
-    <string name="tw_senha">Senha</string>
-    <string name="btn_acessar">Acessar</string>
-    <string name="unidade_de_usuario">Unidade de usuario</string>
+    <string name="tw_name">NOME</string>
+    <string name="tw_senha">SENHA</string>
+    <string name="btn_acessar">ACESSAR</string>
+    <string name="unidade_de_usuario">UNIDADE</string>
+    <string name="pedidos">PEDIDOS</string>
+    <string name="nome_do_parceiro">Nome do parceiro*</string>
+    <string name="numeros_de_pedidos">Numeros de pedidos*</string>
+    <string name="email">E-MAIL</string>
+    <string name="e_mail_do_parceiro">E-mail do parceiro*</string>
+    <string name="telefone_do_parceiro">Telefone do parceiro*</string>
+    <string name="senha_do_usuario">Senha do usuario*</string>
+    <string name="unidade_do_usuario">Unidade do usuario*</string>
+    <string name="nome_do_usuario">Nome do usuario*</string>
 </resources>

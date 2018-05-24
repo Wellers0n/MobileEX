@@ -30,12 +30,11 @@ public class FragmentTwo extends Fragment{
         String[] listaDeItens = {"PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", "PEDIDOS", };
 
         ListView listView = (ListView) view.findViewById(R.id.lista2);
-        Color color = (Color) view.findViewById(R.id.corTitulo);
+
 
         ArrayAdapter<String> adaptarString = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, listaDeItens);
 
         listView.setAdapter(adaptarString);
-        listView.setDrawingCacheBackgroundColor();
 
         return view;
 

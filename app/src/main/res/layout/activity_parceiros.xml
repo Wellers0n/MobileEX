@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParceirosActivity"
+    android:theme="@style/AppTheme"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_pedido_parceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pedidos"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+    <EditText
+        android:id="@+id/et_pedidos_parceiros"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pedido_parceiros"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/numeros_de_pedidos"/>
+
+    <TextView
+        android:id="@+id/tv_nome_parceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tw_name"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/et_pedidos_parceiros"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_nome_parceiros"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nome_parceiros"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/nome_do_parceiro" />
+
+    <TextView
+        android:id="@+id/tv_email_parceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/et_nome_parceiros"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_email_parceiros"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email_parceiros"
+        android:hint="@string/e_mail_do_parceiro"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_telefone_parceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="30sp"
+        android:layout_below="@+id/et_email_parceiros"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_telefone_parceiros"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/telefone_do_parceiro"/>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
