@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ViewHolder nViewHolder = new ViewHolder();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        System.out.println(nViewHolder.etSenha.getText());
         int id = v.getId();
-        System.out.println(nViewHolder.etUsuario.getText());
         if (id == R.id.b_botao){ //fazendo o onClick para passar para a outra tela
             if(nViewHolder.etUsuario.getText().toString().equals("cross") && nViewHolder.etSenha.getText().toString().equals("123") && nViewHolder.etUnidadeUsuario.getText().toString().equals("000")){
                 Toast.makeText(this, "Bem Vindo", Toast.LENGTH_LONG).show();
