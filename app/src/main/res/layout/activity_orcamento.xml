@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrcamentoActivity">
+
+    <TextView
+        android:id="@+id/tv_codigo_orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="codigo"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"/>
+    
+    <EditText
+        android:id="@+id/et_codigo_orcamento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_codigo_orcamento"
+        android:hint="acicione_o_codigo_do_or_amento"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+    
+    <TextView
+        android:id="@+id/tv_data_orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data"
+        android:layout_below="@+id/et_codigo_orcamento"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+    
+    <EditText
+        android:id="@+id/et_data_orcamento"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/tv_data_orcamento"
+        android:layout_centerHorizontal="true"
+        android:hint="adicione_a_data_do_or_amento"
+        android:inputType="date"/>
+    
+    <TextView
+        android:id="@+id/tv_parceiro_orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="parceiro"
+        android:layout_below="@+id/et_data_orcamento"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+    
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_parceiro_orcamento"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/nome_do_parceiro"
+        />
+
+
+
+</RelativeLayout>

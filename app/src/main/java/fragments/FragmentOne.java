@@ -1,6 +1,5 @@
 package fragments;
 
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,21 +12,22 @@ import com.example.wellerson.crossystem.R;
 
 public class FragmentOne extends Fragment {
 
-    public FragmentOne(){
+    public FragmentOne() {
         //Required empty public constructor
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_one, container, false);
 
-        String[] listaDeItens = { "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS"};
+        String[] listaDeItens = {"LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS", "LISTA DE PARCEIROS"};
 
         ListView listView = (ListView) view.findViewById(R.id.lista);
 
@@ -37,4 +37,5 @@ public class FragmentOne extends Fragment {
         listView.setAdapter(adaptarString);
 
         return view;
-    }}
+    }
+}

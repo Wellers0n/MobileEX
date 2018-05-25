@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidosActivity">
+
+<TextView
+    android:id="@+id/tv_codigo_pedidos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="codigo"
+    android:textSize="30sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_codigo_pedidos"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_codigo_pedidos"
+        android:layout_centerHorizontal="true"
+        android:hint="adicione_o_codigo_do_pedido"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_data_pedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_codigo_pedidos"
+        android:text="data"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/et_data_pedidos"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_data_pedidos"
+        android:layout_centerHorizontal="true"
+        android:hint="adicione_a_data_do_pedido"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/tv_parceiro_pedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="parceiro"
+        android:textSize="30sp"
+        android:layout_below="@id/et_data_pedidos"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_parceiro_pedidos"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/nome_do_parceiro"
+        android:inputType="textPersonName"/>
+
+</RelativeLayout>
